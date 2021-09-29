@@ -1,0 +1,282 @@
+/*
+font-family: 'Abril Fatface', cursive;
+font-family: 'Raleway', sans-serif; */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+article, aside, nav, section, main, header, footer, figure, video, audio {
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #35658c;
+    
+}
+h2 {
+    color: #d6ff5c;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #dedede;
+}
+
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #35658c;
+    padding: 1em;
+
+}
+
+header h1 {
+    color: #d6ff5c;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4em;
+    line-height: 1;
+}
+
+header h2 {
+    color: #fff;
+    font-family: 'Raleway', sans-serif; 
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+aside {
+    background-color: #dedede;
+    padding: 0.6em 0 0 0;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside h2 {
+    color: #35658c;
+    border-bottom: solid 1px #35658c;
+    margin-bottom: .6em;
+    text-align: center;
+    
+}
+aside ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+aside ul li {
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+}
+aside li:first-child {
+    padding-top: 1em;
+}
+aside li:last-child {
+    padding-bottom: 1em;
+}
+article {
+    padding: 1em;
+    background-color: #fff;
+}
+article h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+article p {
+    line-height: 1.4;
+    margin: 1em;
+    text-align: justify;
+}
+
+
+/*video*/
+
+
+video {
+     max-width: 100%;
+    height: auto;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+/*end of video*/
+
+
+footer {
+    font-size: .6em;
+    background-color:  #35658c;
+    padding: .7em;
+
+}
+
+footer p {
+    color: #d6ff5c;  
+    text-align: right;
+}
+footer ul {
+    text-align: center;
+}
+footer li {
+    display: inline-block;
+    padding: 0 .8em;
+    margin-top: .3em;
+    border-right: solid 1px #fff;
+}
+
+footer li:last-child {
+    border-right: none;
+}
+
+footer li:first-child {
+    padding-left: 0;
+}
+
+footer a {
+    color: #d6ff5c;
+}
+
+/*navigation*/
+
+nav ul.menu {
+    list-style-type: none;
+    display: none;
+    }
+
+nav li {
+    background-color: #35658c;
+
+    text-align: center;
+    border-bottom: solid 1px #fff;
+}
+nav li:last-child {
+    margin-bottom: .6em;
+}
+nav li a {
+    display: block;
+    padding: .5em;
+    color: #d6ff5c;
+    text-decoration: none;
+}
+
+  nav li a:hover {
+        background-color: #d6ff5c;
+        color: #35658c;
+    }
+    
+
+.showMenu {
+/*
+    background-color: #d6ff5c;
+    color: #35658c;
+    text-align: center;
+    padding: .25em;
+*/
+    display: block;
+    cursor: pointer;
+     position: relative;
+    top: -35px;
+    right: -20px;
+    color: #fff;
+    font-size: 1.75em;
+}
+
+
+.fas fas fa-bars {
+    font-size: 10em;
+    margin-left: .25em;
+}
+
+nav input[type=checkbox]:checked ~ ul.menu {
+    display: block;
+}
+
+nav input[type=checkbox]{
+    display:none;
+}
+
+/*large screen rules */
+
+@media screen and (min-width: 750px) {
+    
+    #container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    header h1 {
+        font-size: 5em;
+    }
+    
+    article {
+        width: 60%;
+        float: left;
+    }
+    
+    aside {
+        background-color: #dedede;
+        width: 40%;
+        float: left;
+    }
+    
+    aside ul li:first-child {
+        padding-top: 2em;
+    }
+    
+    aside h2 {
+        padding: .6em;
+    }
+    
+    nav ul.menu {
+        display: block;
+        background-color: #d6ff5c;
+        text-align: center;
+        
+    }
+    
+    nav li {
+        background-color: #d6ff5c;
+        display: inline-block;
+        border-bottom: none;
+        padding: 0 0.5em;
+    }
+    
+    nav li a {
+        color: #35658c;
+        text-decoration: none;
+    }
+    
+    nav li a:hover {
+        background-color: #35658c;
+        color: #d6ff5c;
+    }
+    
+    .showMenu {
+        display: none;
+    }
+    
+    footer {
+        clear: both;
+    }
+    
+}
